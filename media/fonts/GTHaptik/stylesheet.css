@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'GTHaptikRegular';
+    src: url('GTHaptikRegular.eot');
+    src: url('GTHaptikRegular.eot?#iefix') format('embedded-opentype'),
+        url('GTHaptikRegular.woff2') format('woff2'),
+        url('GTHaptikRegular.woff') format('woff'),
+        url('GTHaptikRegular.ttf') format('truetype'),
+        url('GTHaptikRegular.svg#GTHaptikRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
