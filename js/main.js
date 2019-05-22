@@ -19,5 +19,9 @@ $(function () {
             });
         });
     });
+
+    setTimeout(function() {
+        $('.option_block__zone').removeClass('initial_animation');
+    }, 1800);
 });
 
