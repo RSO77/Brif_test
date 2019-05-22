@@ -108,6 +108,7 @@ body{
     height: 1300px;
     .circle{
       background-color: rgba(33, 33, 33, 0.6);
+      transition: all .3s linear;
       width: 1050px;
       height: 1050px;
       position: absolute;
@@ -129,6 +130,7 @@ body{
       border: 500px solid transparent;
       border-left: 500px solid rgba(33, 33, 33, 0.6);
       border-bottom: 500px solid rgba(33, 33, 33, 0.6);
+      transition: all 1s linear;
       display: block;
       width: 0;
       height: 0;
@@ -509,7 +511,7 @@ body{
         &:hover {
           background-color: rgba(88, 204, 76, 0.85);
           span {
-            color: white
+            color: white;
           }
         }
       }
@@ -535,7 +537,7 @@ body{
     padding: 20px 42px;
     border: none;
     cursor: pointer;
-    transition: all .4s cubic-bezier(.61,.42,.36,2.5);
+    transition: all .4s cubic-bezier(.61,.42,.36,2);
     &:hover{
       background-color: rgba(88, 204, 76, 0.8);
     }
@@ -566,7 +568,7 @@ body{
       margin: 0 15px;
       background-color: white;
       border-radius: 50%;
-      transition: all .4s cubic-bezier(.61,.42,.36,2.5);
+      transition: all .4s cubic-bezier(.61,.42,.36,2);
       &:hover{
         opacity: .7
       }
