@@ -466,7 +466,7 @@ body{
         opacity: 1;
       }
     }
-    .option_block__zone {
+    .option_block__zone{
       .option_block {
         display: inline-block;
         position: relative;
@@ -526,7 +526,60 @@ body{
         }
       }
     }
+    .initial_animation{
+      width: 520px;
+      height: 948px;
+      position: relative;
+      .option_block{
+        margin: 0;
+        display: block;
+        position: absolute;
+        top: 257px;
+        left: 0;
+        transition: all .5s linear;
+      }
+      .init_anim__1{
+        animation: option-init_anim__2 .5s linear .7s forwards;
+      }
+      .init_anim__2{
+        animation: option-init_anim__1 .5s linear .2s  forwards, option-init_anim__2 .5s linear .7s forwards;
+      }
+      .init_anim__4{
+        animation: option-init_anim__1 .5s linear .2s  forwards;
+      }
+      .init_anim__5{
+        animation: option-init_anim__3 .5s linear .7s forwards;
+      }
+      .init_anim__6{
+        animation: option-init_anim__1 .5s linear .2s  forwards, option-init_anim__3 .5s linear .7s forwards;
+      }
+      .init_anim__7{
+        animation: option-init_anim__3 .5s linear .7s forwards, option-init_anim__4 .5s linear 1.3s forwards;
+      }
+      .init_anim__8{
+        animation: option-init_anim__1 .5s linear .2s  forwards, option-init_anim__3 .5s linear .7s forwards, option-init_anim__4 .5s linear 1.3s forwards;
+      }
+    }
   }
+
+
+  @keyframes option-init_anim__1{
+    0%{left: 0;}
+    100%{left: 285px;}
+  }
+  @keyframes option-init_anim__2{
+    0%{top: 257px;}
+    100%{top: 23px;}
+  }
+  @keyframes option-init_anim__3{
+    0%{top: 257px;}
+    100%{top: 491px;}
+  }
+  @keyframes option-init_anim__4{
+    0%{top: 491px;}
+    100%{top: 725px;}
+  }
+
 
   .button_send {
     background-color: #58CC4C;
