@@ -1,5 +1,6 @@
 @import "../media/fonts/Gilroy/stylesheet.css";
 @import "../media/fonts/GTHaptik/stylesheet.css";
+@import "animate.css";
 
 
 body{
@@ -466,11 +467,13 @@ body{
       .option_block {
         display: inline-block;
         position: relative;
+        overflow: hidden;
         background-color: white;
         width: 235px;
         height: 188px;
         margin: 23px;
         transition: all 0.3s ease;
+        perspective: 250px;
         &:nth-child(even) {
           margin-right: 0;
         }
@@ -504,7 +507,7 @@ body{
           }
         }
         &:hover {
-          background-color: #58CC4C;
+          background-color: rgba(88, 204, 76, 0.85);
           span {
             color: white
           }
@@ -521,6 +524,7 @@ body{
       }
     }
   }
+
   .button_send {
     background-color: #58CC4C;
     color: #FFFFFF;
@@ -530,6 +534,11 @@ body{
     text-transform: uppercase;
     padding: 20px 42px;
     border: none;
+    cursor: pointer;
+    transition: all .4s cubic-bezier(.61,.42,.36,2.5);
+    &:hover{
+      background-color: rgba(88, 204, 76, 0.8);
+    }
   }
   .send_text {
     color: #ABABAB;
@@ -557,8 +566,10 @@ body{
       margin: 0 15px;
       background-color: white;
       border-radius: 50%;
-      transition: all .3s ease;
-      &:hover{opacity: .6}
+      transition: all .4s cubic-bezier(.61,.42,.36,2.5);
+      &:hover{
+        opacity: .7
+      }
     }
   }
 }
